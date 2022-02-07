@@ -88,9 +88,50 @@ void exercise4()
 	}
 }
 
+void exercise5()
+{
+	int count = 1;
+	int randomNumber = rand() % 20 + 1;
+	int userNumber;
+	bool loopControl = true;
+	while (loopControl)
+	{
+		cout << "Enter a number between 1 and 20";
+		cin >> userNumber;
+		if (userNumber > 20 || userNumber < 1)
+		{
+			cout << "Enter a number between 1 and 20";
+		}
+		else
+		{
+			loopControl = false;
+		}
+		for (size_t i = 1; i < 21; i++)
+		{
+			if (randomNumber == i)
+			{
+				cout << count << "yes" << "....." << endl;
+			}
+			else if (userNumber == i)
+			{
+				cout << count << "....." << "yes" << endl;
+			}
+			else
+			{
+				cout << count << "........" << endl;
+			}
+			count++;
+		}
+	}
+
+	
+}
+
 int main()
 {
 	//exercise1();
 	//exercise2();
 	//exercise3();
+	//exercise4();
+	exercise5();
 }
