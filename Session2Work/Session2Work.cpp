@@ -18,7 +18,23 @@ void exercise1()
 	}
 }
 
+void exercise2()
+{
+	float aFloat = 4.9;
+	cout << "Starting  value for aFloat is " << aFloat << endl;
+	int bInt = 0;
+	bInt = aFloat / 2;
+	if (bInt == 1)
+	{
+		cout << "Result is: ";
+		cout << aFloat / 2;
+	}
+}
+
+
+
 int main()
 {
-	exercise1();
+	//exercise1();
+	//exercise2();
 }
