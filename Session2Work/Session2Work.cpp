@@ -63,9 +63,34 @@ void exercise3()
 	}
 }
 
+void exercise4()
+{
+	double BMI;
+	double height;
+	double weight;
+	cout << "Enter your height in meters" << endl;
+	cin >> height;
+	cout << "ENter your weight in kilograms" << endl;
+	cin >> weight;
+	BMI = weight / pow(height, 2);
+	cout << BMI;
+	if (BMI < 18.5)
+	{
+		cout << "BMI is underweight";
+	}
+	else if (BMI == 18.5 && BMI < 24.9)
+	{
+		cout << "BMI is normal";
+	}
+	else if (BMI > 24.9)
+	{
+		cout << "BMI is overweight";
+	}
+}
+
 int main()
 {
 	//exercise1();
 	//exercise2();
-	exercise3();
+	//exercise3();
 }
